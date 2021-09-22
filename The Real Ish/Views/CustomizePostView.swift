@@ -19,6 +19,10 @@ struct CustomizePostView: View {
     @EnvironmentObject private var items: itemListViewModel
     @EnvironmentObject private var user: User
     
+    init() {
+        UITextView.appearance().backgroundColor = .clear
+    }
+    
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 50) {
@@ -30,21 +34,22 @@ struct CustomizePostView: View {
                         .frame(height: 40)
                         .background(Color.theme.secondaryText)
                 })
+                TextEditor(text: $caption)
+                    .padding(.horizontal)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 45)
+                    .background(Color.theme.secondaryText)
+                    .foregroundColor(Color.theme.accent)
+                    .padding()
                 if items.image != nil {
                     Image(uiImage: items.image!)
                         .resizable()
                         .frame(maxWidth: .infinity)
                         .frame(height: 300)
-                } else {
-                    Rectangle()
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 300)
+                                
                 }
-                VStack(alignment: .leading) {
-                    Text("Caption:")
-                    TextEditor(text: $caption)
-                }
-                .background(Color.red)
+
+
                 Button(action: {
                     items.caption = caption
                     selection = tag
