@@ -38,6 +38,7 @@
 		52FEF7B826E86D1F00C6C08A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FEF7B726E86D1F00C6C08A /* LoginView.swift */; };
 		52FEF7BC26E8796500C6C08A /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FEF7BB26E8796500C6C08A /* BackButtonView.swift */; };
 		C880D793B952CA48F6AE5E5C /* Pods_The_Real_Ish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3263D9C8B9A8B3F33FFDA9C1 /* Pods_The_Real_Ish.framework */; };
+		E0A9392126FAD9D000735C99 /* Subjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A9392026FAD9D000735C99 /* Subjects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		52FEF7B726E86D1F00C6C08A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		52FEF7BB26E8796500C6C08A /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
 		AAB151DB0D034A17A1A758F2 /* Pods-The Real Ish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Real Ish.release.xcconfig"; path = "Target Support Files/Pods-The Real Ish/Pods-The Real Ish.release.xcconfig"; sourceTree = "<group>"; };
+		E0A9392026FAD9D000735C99 /* Subjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subjects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				520800CC26E98FBD001AE8B8 /* FirebaseViewModel.swift */,
 				520800ED26EAF768001AE8B8 /* PostViewModel.swift */,
 				5225A77726E30F7C00CACAF0 /* ItemListViewModel.swift */,
+				E0A9392026FAD9D000735C99 /* Subjects.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A9392126FAD9D000735C99 /* Subjects.swift in Sources */,
 				5225A77826E30F7C00CACAF0 /* ItemListViewModel.swift in Sources */,
 				52FEF7B026E6DD9400C6C08A /* SearchView.swift in Sources */,
 				52FEF7B626E826BA00C6C08A /* PostsView.swift in Sources */,

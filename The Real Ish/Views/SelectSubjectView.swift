@@ -44,7 +44,7 @@ struct SelectSubjectView: View {
                 if (items.count > 3) || (items.count < 1) {
                     showAlert.toggle()
                 } else {
-                    fb.addPost(image: items.image!, caption: items.caption, collections: subjects.business)
+                    fb.addPost(image: items.image!, caption: items.caption, collections: items.FirebasePostSubjects)
                     selection = tag
                     items.image = nil
                 }

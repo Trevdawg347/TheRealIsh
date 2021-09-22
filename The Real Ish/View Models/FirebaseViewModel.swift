@@ -20,9 +20,9 @@ class FirebaseViewModel: ObservableObject {
         return auth.currentUser != nil
     }
     
-    func loadPosts(collections: [String]) {
+    func loadPosts() {
         let db = Firestore.firestore()
-        db.collection(collections).getDocuments(completion: { query, error in
+        db.collection("posts").getDocuments(completion: { query, error in
             if self.posts.count != query?.count {
                 for post in query!.documents {
                     let storage = Storage.storage().reference().child("images")
@@ -38,12 +38,12 @@ class FirebaseViewModel: ObservableObject {
     }
     
     func addPost(image: UIImage, caption: String, collections: [String]) {
-        let db = Firestore.firestore().collection("posts").addDocument(data: ["caption" : caption])
+        
+        let db = Firestore.firestore().collection("posts").addDocument(data: ["caption" : caption, "subjects": collections])
         let postId = db.documentID
         let imageData = image.jpegData(compressionQuality: 1)
         let storage = Storage.storage().reference()
         storage.child("images").child(postId).putData(imageData!)
-        
     }
     
     func signIn(email: String, password: String) {
