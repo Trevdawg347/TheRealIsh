@@ -63,9 +63,6 @@ struct UserFollowingView: View {
                         
                     }
                 }
-                .onAppear(perform: {
-                    fb.loadPosts()
-                })
             } else {
                 VStack(alignment: .leading) {
                     NavigationLink(
@@ -86,6 +83,7 @@ struct UserFollowingView: View {
         }
     }
 }
+
 
 struct UserFollowingView_Previews: PreviewProvider {
     static var previews: some View {

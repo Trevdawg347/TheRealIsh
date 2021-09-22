@@ -10,6 +10,7 @@ import SwiftUI
 struct SubjectsView: View {
     
     @EnvironmentObject private var items: itemListViewModel
+    @EnvironmentObject private var fb: FirebaseViewModel
     private let tag = "itemView"
     @State private var selection: String? = ""
     
@@ -34,7 +35,11 @@ struct SubjectsView: View {
                             .padding(.horizontal)
                             .onTapGesture {
                                 items.subjectInstanceName = item.name
-                                selection = tag
+                                fb.loadPosts()
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                                    selection = tag
+                                }
+                                
                             }
                             .overlay(
                                 Text(item.name)
@@ -59,6 +64,7 @@ struct SubjectsView_Previews: PreviewProvider {
     static var previews: some View {
         SubjectsView()
             .preferredColorScheme(.dark)
+            .environmentObject(FirebaseViewModel())
             .environmentObject(itemListViewModel())
     }
 }
