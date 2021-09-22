@@ -19,6 +19,7 @@ struct SelectSubjectView: View {
     @State private var selection: String? = ""
     @State private var animate: Bool = false
     @State private var showAlert: Bool = false
+    @State private var subjects = SubjectService()
     
     @State private var list: [String] = []
         
@@ -43,7 +44,7 @@ struct SelectSubjectView: View {
                 if (items.count > 3) || (items.count < 1) {
                     showAlert.toggle()
                 } else {
-                    fb.addPost(image: items.image!, caption: items.caption, collections: items.FirebasePostSubjects)
+                    fb.addPost(image: items.image!, caption: items.caption, collections: subjects.business)
                     selection = tag
                     items.image = nil
                 }
