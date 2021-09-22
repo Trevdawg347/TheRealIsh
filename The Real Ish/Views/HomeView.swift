@@ -26,10 +26,15 @@ struct HomeView: View {
                         .fontWeight(.bold)
                         .padding(.leading, 36)
                     Spacer()
-                    Image(systemName: "gearshape.fill")
-                        .resizable()
-                        .frame(width: 25, height: 25)
-                        .padding(.horizontal)
+                    NavigationLink(
+                        destination: ProfileView(),
+                        label: {
+                            Image(systemName: "gearshape.fill")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                                .padding(.horizontal, 20)
+                                .foregroundColor(Color.theme.accent)
+                        })
                 }
                 ScrollView() {
                     SearchBar(textFieldText: $items.textFieldText)
