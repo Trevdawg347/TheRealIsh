@@ -26,6 +26,7 @@ struct SubjectsView: View {
                     .padding(.leading, 36)
                 ScrollView() {
                     SearchBar(textFieldText: $items.textFieldText)
+                    Button("Load") { fb.loadPosts() }
                     ForEach(items.subjects) { item in
                         RoundedRectangle(cornerRadius: 25)
                             .foregroundColor(Color.theme.pinkColor)
@@ -35,10 +36,8 @@ struct SubjectsView: View {
                             .padding(.horizontal)
                             .onTapGesture {
                                 items.subjectInstanceName = item.name
-                                fb.loadPosts()
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                                    selection = tag
-                                }
+                                selection = tag
+                            
                                 
                             }
                             .overlay(

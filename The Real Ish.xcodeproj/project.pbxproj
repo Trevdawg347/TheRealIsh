@@ -39,7 +39,6 @@
 		52FEF7BC26E8796500C6C08A /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FEF7BB26E8796500C6C08A /* BackButtonView.swift */; };
 		C880D793B952CA48F6AE5E5C /* Pods_The_Real_Ish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3263D9C8B9A8B3F33FFDA9C1 /* Pods_The_Real_Ish.framework */; };
 		E0A9392126FAD9D000735C99 /* Subjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A9392026FAD9D000735C99 /* Subjects.swift */; };
-		E0A9392326FAE79E00735C99 /* UserFollowingView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A9392226FAE79E00735C99 /* UserFollowingView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,7 +78,6 @@
 		52FEF7BB26E8796500C6C08A /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
 		AAB151DB0D034A17A1A758F2 /* Pods-The Real Ish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Real Ish.release.xcconfig"; path = "Target Support Files/Pods-The Real Ish/Pods-The Real Ish.release.xcconfig"; sourceTree = "<group>"; };
 		E0A9392026FAD9D000735C99 /* Subjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subjects.swift; sourceTree = "<group>"; };
-		E0A9392226FAE79E00735C99 /* UserFollowingView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowingView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,7 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				52FEF7AD26E6DD5B00C6C08A /* UserFollowingView.swift */,
-				E0A9392226FAE79E00735C99 /* UserFollowingView2.swift */,
 				52FEF7AF26E6DD9400C6C08A /* SearchView.swift */,
 				52FEF7AB26E6DD2900C6C08A /* FeaturedView.swift */,
 			);
@@ -365,7 +362,6 @@
 				520800EE26EAF768001AE8B8 /* PostViewModel.swift in Sources */,
 				5208010926ED7868001AE8B8 /* SubjectService.swift in Sources */,
 				5225A77226E2F97100CACAF0 /* Color.swift in Sources */,
-				E0A9392326FAE79E00735C99 /* UserFollowingView2.swift in Sources */,
 				52FEF7B426E6E16800C6C08A /* HomeView.swift in Sources */,
 				5225A75E26E2EF4F00CACAF0 /* The_Real_IshApp.swift in Sources */,
 				52FEF7AC26E6DD2A00C6C08A /* FeaturedView.swift in Sources */,

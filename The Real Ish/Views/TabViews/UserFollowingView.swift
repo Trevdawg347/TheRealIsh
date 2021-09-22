@@ -17,70 +17,40 @@ struct UserFollowingView: View {
     @State private var selection: String? = ""
     
     var body: some View {
-        ForEach(fb.posts) { post in
-            if post.subjects.contains(items.subjectInstanceName) {
-                ZStack {
-                    Color.theme.background
-                        .ignoresSafeArea()
-                    
-                    VStack(alignment: .leading) {
-                        Text(items.subjectInstanceName)
-                            .font(.largeTitle)
-                            .foregroundColor(Color.theme.accent)
-                        HStack {
-                            Button(action: {
-                                selection = tag
-                            }, label: {
-                                BackButtonView()
-                            })
-                            NavigationLink(
-                                destination: ExampleView(),
-                                label: {
-                                    Text("Navigate")
-                                })
+        
+        ZStack {
+            Color.theme.background
+                .ignoresSafeArea()
+            
+            VStack(alignment: .leading) {
+                Text(items.subjectInstanceName)
+                    .font(.largeTitle)
+                    .foregroundColor(Color.theme.accent)
+
+                NavigationLink(
+                    destination: HomeView(),
+                    tag: tag,
+                    selection: $selection,
+                    label: {})
+                
+                ScrollView {
+                    ForEach(fb.posts.reversed()) { post in
+                        if post.subjects.contains(items.subjectInstanceName) {
+                            NewPostView(post: post)
                         }
-                        NavigationLink(
-                            destination: HomeView(),
-                            tag: tag,
-                            selection: $selection,
-                            label: {})
-                        
-                        ScrollView {
-                            ForEach(fb.posts.reversed()) { post in
-                                NewPostView(post: post)
-                            }
-                            
-                            Text("You might also like")
-                            Rectangle()
-                                .frame(width: 300, height: 100)
-                            Rectangle()
-                                .frame(width: 300, height: 100)
-                            Rectangle()
-                                .frame(width: 300, height: 100)
-                        }
-                        .foregroundColor(Color.theme.accent)
-                        .navigationBarHidden(true)
-                        
                     }
+                    
+                    Text("You might also like")
+                    Rectangle()
+                        .frame(width: 300, height: 100)
+                    Rectangle()
+                        .frame(width: 300, height: 100)
+                    Rectangle()
+                        .frame(width: 300, height: 100)
                 }
-            } else {
-                VStack(alignment: .leading) {
-                    NavigationLink(
-                        destination: HomeView(),
-                        tag: tag,
-                        selection: $selection,
-                        label: {})
-                    Button(action: {
-                        selection = tag
-                    }, label: {
-                        BackButtonView()
-                    })
-                    Spacer()
-                    Text("Error loading view")
-                    Spacer()
-                }
+                .foregroundColor(Color.theme.accent)
             }
-        }
+        }        
     }
 }
 

@@ -17,7 +17,7 @@ struct ItemsView: View {
         
         TabView(content: {
             
-            UserFollowingView2().tabItem { Image(systemName: "person") }.tag(1)
+            UserFollowingView().tabItem { Image(systemName: "person") }.tag(1)
             
             SearchView().tabItem { Image(systemName: "magnifyingglass") }.tag(2)
             
