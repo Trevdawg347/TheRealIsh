@@ -17,11 +17,6 @@ struct The_Real_IshApp: App {
     @StateObject private var items = itemListViewModel()
     @StateObject private var firebaseViewModel = FirebaseViewModel()
     
-    init() {
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor : UIColor(Color.red)]
-        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor : UIColor(Color.red)]
-    }
-    
     var body: some Scene {
         WindowGroup {
             NavigationView {

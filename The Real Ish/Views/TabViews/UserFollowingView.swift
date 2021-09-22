@@ -17,7 +17,7 @@ struct UserFollowingView: View {
     @State private var selection: String? = ""
     
     var body: some View {
-        if items.FirebasePostSubjects.contains(items.subjectInstanceName) {
+        if fb.posts.subject.contains(items.subjectInstanceName) {
             ZStack {
                 Color.theme.background
                     .ignoresSafeArea()

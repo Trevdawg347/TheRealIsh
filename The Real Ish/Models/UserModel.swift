@@ -21,6 +21,7 @@ struct Posts: Identifiable {
     var id: String
     var image: UIImage?
     var caption: String
+    var subjects: [String]
 }
 
 

@@ -20,6 +20,9 @@ class FirebaseViewModel: ObservableObject {
         return auth.currentUser != nil
     }
     
+    
+    
+    
     func loadPosts() {
         let db = Firestore.firestore()
         db.collection("posts").getDocuments(completion: { query, error in
@@ -29,7 +32,7 @@ class FirebaseViewModel: ObservableObject {
                     storage.child(post.documentID).getData(maxSize: 20 * 1024 * 1024) { imageData, error in
                         if error == nil {
                             let image = UIImage(data: imageData!)
-                            self.posts.append(Posts(id: post.documentID, image: image, caption: post.get("caption") as! String))
+                            self.posts.append(Posts(id: post.documentID, image: image, caption: post.get("caption") as! String, subjects: post.get("subjects") as! [String]))
                         }
                     }
                 }
