@@ -29,8 +29,8 @@ struct SignUpView: View {
                     }
                     Section(header: Text("Email")) {
                         TextField("Email", text: $email)
-
                     }
+                    
                     Section(header: Text("Password")) {
                         SecureField("Password", text: $password)
                         SecureField("Confirm Password", text: $confirmPassword)

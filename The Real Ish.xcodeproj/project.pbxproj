@@ -21,7 +21,7 @@
 		5225A75E26E2EF4F00CACAF0 /* The_Real_IshApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225A75D26E2EF4F00CACAF0 /* The_Real_IshApp.swift */; };
 		5225A76226E2EF5200CACAF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5225A76126E2EF5200CACAF0 /* Assets.xcassets */; };
 		5225A76526E2EF5200CACAF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5225A76426E2EF5200CACAF0 /* Preview Assets.xcassets */; };
-		5225A77026E2EFC300CACAF0 /* SubjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225A76F26E2EFC300CACAF0 /* SubjectsView.swift */; };
+		5225A77026E2EFC300CACAF0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225A76F26E2EFC300CACAF0 /* HomeView.swift */; };
 		5225A77226E2F97100CACAF0 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225A77126E2F97100CACAF0 /* Color.swift */; };
 		5225A77426E3030F00CACAF0 /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225A77326E3030F00CACAF0 /* ItemsView.swift */; };
 		5225A77826E30F7C00CACAF0 /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225A77726E30F7C00CACAF0 /* ItemListViewModel.swift */; };
@@ -33,7 +33,6 @@
 		52FEF7AE26E6DD5B00C6C08A /* UserFollowingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FEF7AD26E6DD5B00C6C08A /* UserFollowingView.swift */; };
 		52FEF7B026E6DD9400C6C08A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FEF7AF26E6DD9400C6C08A /* SearchView.swift */; };
 		52FEF7B226E6DDF400C6C08A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FEF7B126E6DDF400C6C08A /* ProfileView.swift */; };
-		52FEF7B426E6E16800C6C08A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FEF7B326E6E16800C6C08A /* HomeView.swift */; };
 		52FEF7B626E826BA00C6C08A /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FEF7B526E826BA00C6C08A /* PostsView.swift */; };
 		52FEF7B826E86D1F00C6C08A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FEF7B726E86D1F00C6C08A /* LoginView.swift */; };
 		52FEF7BC26E8796500C6C08A /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FEF7BB26E8796500C6C08A /* BackButtonView.swift */; };
@@ -60,7 +59,7 @@
 		5225A76126E2EF5200CACAF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5225A76426E2EF5200CACAF0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5225A76626E2EF5200CACAF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5225A76F26E2EFC300CACAF0 /* SubjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsView.swift; sourceTree = "<group>"; };
+		5225A76F26E2EFC300CACAF0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5225A77126E2F97100CACAF0 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		5225A77326E3030F00CACAF0 /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
 		5225A77726E30F7C00CACAF0 /* ItemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewModel.swift; sourceTree = "<group>"; };
@@ -72,7 +71,6 @@
 		52FEF7AD26E6DD5B00C6C08A /* UserFollowingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowingView.swift; sourceTree = "<group>"; };
 		52FEF7AF26E6DD9400C6C08A /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		52FEF7B126E6DDF400C6C08A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		52FEF7B326E6E16800C6C08A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		52FEF7B526E826BA00C6C08A /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		52FEF7B726E86D1F00C6C08A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		52FEF7BB26E8796500C6C08A /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
@@ -175,8 +173,7 @@
 				52FEF7B726E86D1F00C6C08A /* LoginView.swift */,
 				525E754026F2B724002AB249 /* ExampleView.swift */,
 				520800CE26E9C0F0001AE8B8 /* SignUpView.swift */,
-				52FEF7B326E6E16800C6C08A /* HomeView.swift */,
-				5225A76F26E2EFC300CACAF0 /* SubjectsView.swift */,
+				5225A76F26E2EFC300CACAF0 /* HomeView.swift */,
 				52FEF7B126E6DDF400C6C08A /* ProfileView.swift */,
 				52ECE89626F6908200BB50D2 /* CustomizePostView.swift */,
 				520800F826ED13BD001AE8B8 /* SelectSubjectView.swift */,
@@ -362,7 +359,6 @@
 				520800EE26EAF768001AE8B8 /* PostViewModel.swift in Sources */,
 				5208010926ED7868001AE8B8 /* SubjectService.swift in Sources */,
 				5225A77226E2F97100CACAF0 /* Color.swift in Sources */,
-				52FEF7B426E6E16800C6C08A /* HomeView.swift in Sources */,
 				5225A75E26E2EF4F00CACAF0 /* The_Real_IshApp.swift in Sources */,
 				52FEF7AC26E6DD2A00C6C08A /* FeaturedView.swift in Sources */,
 				525E754126F2B724002AB249 /* ExampleView.swift in Sources */,
@@ -377,7 +373,7 @@
 				5208010B26ED84B7001AE8B8 /* NewPostView.swift in Sources */,
 				52FEF7B826E86D1F00C6C08A /* LoginView.swift in Sources */,
 				52ECE89726F6908200BB50D2 /* CustomizePostView.swift in Sources */,
-				5225A77026E2EFC300CACAF0 /* SubjectsView.swift in Sources */,
+				5225A77026E2EFC300CACAF0 /* HomeView.swift in Sources */,
 				520800F526EB1531001AE8B8 /* UserModel.swift in Sources */,
 				5225A77426E3030F00CACAF0 /* ItemsView.swift in Sources */,
 			);
